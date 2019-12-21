@@ -25,7 +25,7 @@ function shouldPerformInlineOAuth({cookies}: Context) {
 export default function createShopifyAuth(options: OAuthStartOptions) {
   const config = {
     scopes: [],
-    prefix: '',
+    prefix: '/next',
     myShopifyDomain: DEFAULT_MYSHOPIFY_DOMAIN,
     accessMode: DEFAULT_ACCESS_MODE,
     ...options,
